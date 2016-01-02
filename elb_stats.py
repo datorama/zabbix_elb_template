@@ -13,20 +13,20 @@ parser.add_option("-a", "--access-key", dest="access_key",
 parser.add_option("-k", "--secret-key", dest="secret_key",
                 help="AWS Secret Access Key")
 parser.add_option("-m", "--metric", dest="metric",
-                help="RDS cloudwatch metric")
+                help="ELB cloudwatch metric")
 parser.add_option("-r", "--region", dest="region",
-                help="RDS region")
+                help="AWS region")
 
 (options, args) = parser.parse_args()
 
 if (options.instance_id == None):
-    parser.error("-i DBInstanceIdentifier is required")
+    parser.error("-i LoadBalancerName is required")
 if (options.access_key == None):
     parser.error("-a AWS Access Key is required")
 if (options.secret_key == None):
     parser.error("-k AWS Secret Key is required")
 if (options.metric == None):
-    parser.error("-m RDS cloudwatch metric is required")
+    parser.error("-m ELB cloudwatch metric is required")
 ###
 
 ### Real code
