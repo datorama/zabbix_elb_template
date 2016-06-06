@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2015-06-11T11:39:45Z</date>
+    <version>3.0</version>
+    <date>2016-06-06T06:31:34Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -25,7 +25,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;BackendConnectionErrors&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;BackendConnectionErrors&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -64,7 +64,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -103,7 +103,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_4XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_4XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -142,7 +142,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_5XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_5XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -181,7 +181,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;RequestCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;RequestCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -220,7 +220,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>elb_stats.py[&quot;--metric&quot;,&quot;UnHealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>elb_stats.py[&quot;--metric&quot;,&quot;UnHealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -264,14 +264,29 @@
                     <macro>{$AWS_SECRET_KEY}</macro>
                     <value></value>
                 </macro>
+                <macro>
+                    <macro>{$REGION}</macro>
+                    <value>us-east-1</value>
+                </macro>
             </macros>
-            <templates/>
+            <templates>
+            </templates>
             <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template AWS ELB:elb_stats.py[&quot;--metric&quot;,&quot;UnHealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;].last()}&gt;1</expression>
+            <expression>{Template AWS ELB:elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;].last()}&lt;1</expression>
+            <name>Servers are out-of-rotation on {HOST.NAME} ELB</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template AWS ELB:elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;].last()}&lt;2</expression>
             <name>Servers are out-of-rotation on {HOST.NAME} ELB</name>
             <url/>
             <status>0</status>
@@ -309,7 +324,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;BackendConnectionErrors&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;BackendConnectionErrors&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -321,7 +336,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_4XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_4XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -333,7 +348,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_5XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HTTPCode_ELB_5XX&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -365,7 +380,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;HealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -377,7 +392,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;UnHealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;UnHealthyHostCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -409,7 +424,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS ELB</host>
-                        <key>elb_stats.py[&quot;--metric&quot;,&quot;RequestCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>elb_stats.py[&quot;--metric&quot;,&quot;RequestCount&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
